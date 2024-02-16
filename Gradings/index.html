@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form action="process.php" method="post">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Reg. No.</th>
+                    <th>CAT</th>
+                    <th>Exam</th> 
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="n1" placeholder="Name"></td>
+                    <td><input type="text" name="regNo"></td>
+                    <td><input type="text" name="cat1"></td>
+                    <td><input type="text" name="exam1"></td>
+                    <td><input type="radio" name="class" value="A">A
+                        <input type="radio" name="class" value="B">B
+                        <input type="radio" name="class" value="C">C
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="n2"></td>
+                    <td><input type="text" name="regNo2"></td>
+                    <td><input type="text" name="cat2"></td>
+                    <td><input type="text" name="exam2"></td>
+                    <td><input type="radio" name="class2" value="A">A
+                        <input type="radio" name="class2" value="B">B
+                        <input type="radio" name="class2" value="C">C
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

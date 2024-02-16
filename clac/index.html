@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="process.php" method="post">
+        <div class="form">
+            <div>
+                <p>
+                    <h1>Simple PHP Calculator program</h1>
+                </p>
+            </div>
+            <div>
+                <input aria-label="firstNumber" name="firstNumber" type="text">
+                <input aria-label="secondNumber" name="secondNumber" type="text">
+            </div>
+            <div>
+                <input aria-label="result" name="result" type="text" value="<?php echo $_result; ?>">
+            </div>
+            <div>
+                <button type="submit" value="+" name="operation">Add</button>
+                <button type="submit" value="-" name="operation">Subtract</button>
+                <button type="submit" value="*" name="operation">Product</button>
+                <button type="submit" value="/" name="operation">Division</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
